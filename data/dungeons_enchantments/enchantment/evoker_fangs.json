@@ -1,0 +1,96 @@
+{
+  "description": "Evoker Fangs",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "supported_items": "#minecraft:axes",
+  "primary_items": "#minecraft:axes",
+  "weight": 1,
+  "max_level": 4,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 1
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:play_sound",
+              "sound": "minecraft:entity.evoker.prepare_summon",
+              "volume": 1,
+              "pitch": 1
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "dungeons_enchantments:evoker_fangs"
+            },
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:indirect_magic",
+              "min_damage": {
+                "type": "minecraft:lookup",
+                "values": [
+                  6,
+                  9,
+                  12,
+                  9
+                ],
+                "fallback": {
+                  "type": "minecraft:linear",
+                  "base": 6,
+                  "per_level_above_first": 3
+                }
+              },
+              "max_damage": {
+                "type": "minecraft:lookup",
+                "values": [
+                  9,
+                  12,
+                  15,
+                  9
+                ],
+                "fallback": {
+                  "type": "minecraft:linear",
+                  "base": 9,
+                  "per_level_above_first": 3
+                }
+              }
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:entity_interaction_range",
+        "id": "dungeons_enchantments:evoker_fangs_range",
+        "amount": {
+          "type": "minecraft:lookup",
+          "values": [
+            0,
+            0,
+            3,
+            0
+          ],
+          "fallback": 0
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

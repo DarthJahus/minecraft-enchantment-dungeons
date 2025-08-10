@@ -1,0 +1,64 @@
+{
+  "description": "Explosive Attack",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "primary_items": "#minecraft:enchantable/weapon",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:explosion",
+              "min_damage": 40,
+              "max_damage": 40
+            },
+            {
+              "type": "minecraft:explode",
+              "attribute_to_user": true,
+              "damage_type": "minecraft:explosion",
+              "knockback_multiplier": 0.5,
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "radius": 1,
+              "create_fire": false,
+              "block_interaction": "none",
+              "small_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "large_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "sound": "minecraft:entity.generic.explode"
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "description": "Reckless",
+  "supported_items": "#minecraft:enchantable/armor",
+  "primary_items": "#minecraft:enchantable/armor",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "dungeons_enchantments:reckless_damage",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:max_health",
+        "id": "dungeons_enchantments:reckless_health",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -1,
+          "per_level_above_first": -1.5
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

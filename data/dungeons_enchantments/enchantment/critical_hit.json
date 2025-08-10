@@ -1,0 +1,41 @@
+{
+  "description": "Critical Hit",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "primary_items": "#minecraft:enchantable/sharp_weapon",
+  "weight": 1,
+  "max_level": 4,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.1,
+              "per_level_above_first": 0.05
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": 3
+        }
+      }
+    ]
+  }
+}
