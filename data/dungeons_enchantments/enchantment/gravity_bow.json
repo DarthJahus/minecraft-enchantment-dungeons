@@ -1,0 +1,81 @@
+{
+  "description": "Gravity Pulse",
+  "exclusive_set": "minecraft:multishot",
+  "supported_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "primary_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:play_sound",
+              "sound": "minecraft:item.chorus_fruit.teleport",
+              "volume": 1,
+              "pitch": 1
+            },
+            {
+              "type": "minecraft:spawn_particles",
+              "particle": {
+                "type": "minecraft:dust_color_transition",
+                "from_color": 11272856,
+                "to_color": 5319510,
+                "scale": 3
+              },
+              "horizontal_position": {
+                "type": "in_bounding_box",
+                "offset": 0,
+                "scale": 1
+              },
+              "vertical_position": {
+                "type": "in_bounding_box",
+                "offset": 0,
+                "scale": 1
+              },
+              "horizontal_velocity": {
+                "base": 0.25,
+                "movement_scale": 0
+              },
+              "vertical_velocity": {
+                "base": 0.25,
+                "movement_scale": 0
+              },
+              "speed": 1
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "dungeons_enchantments:gravity_weapon"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

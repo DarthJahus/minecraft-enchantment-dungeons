@@ -4,7 +4,7 @@
   "supported_items": "#minecraft:axes",
   "primary_items": "#minecraft:axes",
   "weight": 1,
-  "max_level": 4,
+  "max_level": 3,
   "min_cost": {
     "base": 30,
     "per_level_above_first": 10
@@ -13,17 +13,13 @@
     "base": 40,
     "per_level_above_first": 10
   },
-  "anvil_cost": 10,
+  "anvil_cost": 15,
   "slots": [
     "mainhand"
   ],
   "effects": {
     "minecraft:post_attack": [
       {
-        "requirements": {
-          "condition": "minecraft:random_chance",
-          "chance": 1
-        },
         "effect": {
           "type": "minecraft:all_of",
           "effects": [
@@ -41,32 +37,14 @@
               "type": "minecraft:damage_entity",
               "damage_type": "minecraft:indirect_magic",
               "min_damage": {
-                "type": "minecraft:lookup",
-                "values": [
-                  6,
-                  9,
-                  12,
-                  9
-                ],
-                "fallback": {
-                  "type": "minecraft:linear",
-                  "base": 6,
-                  "per_level_above_first": 3
-                }
+                "type": "minecraft:linear",
+                "base": 6,
+                "per_level_above_first": 3
               },
               "max_damage": {
-                "type": "minecraft:lookup",
-                "values": [
-                  9,
-                  12,
-                  15,
-                  9
-                ],
-                "fallback": {
-                  "type": "minecraft:linear",
-                  "base": 9,
-                  "per_level_above_first": 3
-                }
+                "type": "minecraft:linear",
+                "base": 9,
+                "per_level_above_first": 3
               }
             }
           ]
@@ -84,8 +62,7 @@
           "values": [
             0,
             0,
-            3,
-            0
+            3
           ],
           "fallback": 0
         },

@@ -1,0 +1,42 @@
+{
+  "description": "Defensive Fangs",
+  "supported_items": "minecraft:shield",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 15,
+  "slots": [
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "dungeons_enchantments:defensive_fangs"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:knockback_resistance",
+        "id": "dungeons_enchantments:defensive_fangs_knockback_resistance",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.3,
+          "per_level_above_first": 0.3
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

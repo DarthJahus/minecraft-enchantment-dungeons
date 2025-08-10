@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "dungeons_enchantments:reapers_edge": 1
+                "dungeons_enchantments:defensive_fangs": 2
               }
             }
           ]
