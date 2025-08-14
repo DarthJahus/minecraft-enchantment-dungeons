@@ -64,7 +64,7 @@ Offers a 25 % chance to replace the current attack with an explosion that deals 
 
 \* Considering a Netherite Sword enchanted with Critical Hit. For comparison, a Sharpness V Netherite Sword deals 11 damage points.
 
-## Gravity Weapon & Gravity Bow
+## Gravity Pulse & Gravity Pulse Arrows
 
 Each attack emits a blast that pulls undead enemies towards the attacked entity (range: 12).
 
@@ -102,3 +102,27 @@ Summons Evoker Fangs all around the player when hit by an attack.
 \*\* if at less than 12 blocks away from the player
 
 Note: Shield must be in passive position (not Used).
+
+## Gravity Warp & Gravity Warp Arrows
+
+_Suggested by itay912 on Discord._
+
+Warps gravity around the victim, making it much heavier and either slows it down or makes it levitate.
+
+Chances:
+
+| Result       | Sharp weapon | Bow & Crossbow |
+|--------------|--------------|----------------|
+| No effect    | 25 %         | 56 %           |
+| Slowness\*   | 50 %         | 25 %           |
+| Levitation\* | 25 ‰         | 19 %           |
+
+\* If any effect is applied, the victim becomes much heavier during 10 s.
+
+Effect duration depends on enchantment level:
+
+| Level | Effect strength | Effect duration |
+|-------|-----------------|-----------------|
+| 1     | 1 - 2           | 3               |
+| 2     | 2 - 3           | 5               |
+| 3     | 3 - 4           | 7               |
