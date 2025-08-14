@@ -2,6 +2,15 @@
 
 A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft Java gameplay and difficulty balance.
 
+- [Critical Hit](#critical-hit)
+- [Thundering](#thundering)
+- [Reckless](#reckless)
+- [Explosive Attacks](#explosive-attack)
+- [Gravity Pulse](#gravity-pulse--gravity-pulse-arrows)
+- [Evoker Fangs](#evoker-fangs)
+- [Defensive Fangs](#defensive-fangs)
+- [Gravity Warp](#gravity-warp--gravity-warp-arrows)
+
 ## Critical Hit
 
 Offers a chance to deal a critical damage (× 3).
