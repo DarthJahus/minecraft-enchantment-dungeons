@@ -2,14 +2,16 @@
 
 A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft Java gameplay and difficulty balance.
 
-- [Critical Hit](#critical-hit)
-- [Thundering](#thundering)
-- [Reckless](#reckless)
-- [Explosive Attacks](#explosive-attack)
-- [Gravity Pulse](#gravity-pulse--gravity-pulse-arrows)
-- [Evoker Fangs](#evoker-fangs)
-- [Defensive Fangs](#defensive-fangs)
-- [Gravity Warp](#gravity-warp--gravity-warp-arrows)
+- [Critical Hit](#critical-hit): deal critical damage.
+- [Thundering](#thundering): replace your attack with a Thunder strike.
+- [Reckless](#reckless): Trade your Hearts for higher Attack Damage.
+- [Explosive Attacks](#explosive-attack): replace your attack with an explosion. 
+- [Gravity Pulse](#gravity-pulse--gravity-pulse-arrows): Pull the enemies around to your opponent.
+- [Evoker Fangs](#evoker-fangs): Summon fangs like an Evoker.
+- [Defensive Fangs](#defensive-fangs): Evoker Fangs appear around the player.
+- [Gravity Warp](#gravity-warp--gravity-warp-arrows): Make the opponent become heavier, then levitate or slow down.
+
+---
 
 ## Critical Hit
 
@@ -124,7 +126,7 @@ Chances:
 |--------------|--------------|----------------|
 | No effect    | 25 %         | 56 %           |
 | Slowness\*   | 50 %         | 25 %           |
-| Levitation\* | 25 ‰         | 19 %           |
+| Levitation\* | 25 %         | 19 %           |
 
 \* If any effect is applied, the victim becomes much heavier during 10 s.
 
