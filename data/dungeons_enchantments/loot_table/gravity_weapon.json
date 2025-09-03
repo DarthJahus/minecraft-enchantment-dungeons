@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "dungeons_enchantments:gravity_weapon": 1
+                "dungeons_enchantments:gravity_pulse_weapon": 1
               }
             }
           ]
