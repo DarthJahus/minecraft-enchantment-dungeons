@@ -1,0 +1,56 @@
+{
+  "exclusive_set": "minecraft:infinity",
+  "primary_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "anvil_cost": 6,
+  "description": "Recycler",
+  "effects": {
+    "minecraft:ammo_use": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 0
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#minecraft:arrows"
+            }
+          },
+          {
+            "condition": "minecraft:random_chance",
+            "chance": {
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:lookup",
+                "values": [
+                  0.1,
+                  0.3,
+                  0.5
+                ],
+                "fallback": 0.75
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 5
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 5
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/bow",
+  "weight": 1
+}
