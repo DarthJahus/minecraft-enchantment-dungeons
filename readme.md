@@ -10,6 +10,7 @@ A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft J
 - [Evoker Fangs](#evoker-fangs): Summon fangs like an Evoker.
 - [Defensive Fangs](#defensive-fangs): Evoker Fangs appear around the player.
 - [Gravity Warp](#gravity-warp--gravity-warp-arrows): Make the opponent become heavier, then levitate or slow down.
+- [Recycler](#recycler): Randomly not use an arrow.
 
 ---
 
@@ -137,3 +138,17 @@ Effect duration depends on enchantment level:
 | 1     | 1 - 2           | 3               |
 | 2     | 2 - 3           | 5               |
 | 3     | 3 - 4           | 7               |
+
+## Recycler
+
+Gives a chance to not use an arrow (reuse the same one). It's like Infinity, but less powerful, and can be used alongside Mending.
+
+- Supported: Bow
+- Incompatible with: Infinity
+- In Enchanting Table: None
+
+| Level | Chance |
+|-------|--------|
+| 1     | 10 %   |
+| 2     | 30 %   |
+| 3     | 50 %   |
