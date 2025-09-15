@@ -5,6 +5,11 @@
         "dungeons_enchantments:evoker_fangs",
         "dungeons_enchantments:explosive_attack",
         "dungeons_enchantments:reckless",
-        "dungeons_enchantments:thundering"
+        "dungeons_enchantments:thundering",
+        "dungeons_enchantments:gravity_warp",
+        "dungeons_enchantments:gravity_pulse_bow",
+        "dungeons_enchantments:gravity_pulse_weapon",
+        "dungeons_enchantments:gravity_warp_bow",
+        "dungeons_enchantments:recycler"
     ]
 }
