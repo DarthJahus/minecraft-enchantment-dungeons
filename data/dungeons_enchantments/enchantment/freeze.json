@@ -1,0 +1,76 @@
+{
+  "description": "Freeze",
+  "exclusive_set": [
+    "minecraft:flame",
+    "minecraft:fire_aspect"
+  ],
+  "supported_items": [
+    "minecraft:iron_sword",
+    "minecraft:diamond_sword",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:iron_axe",
+    "minecraft:diamond_axe"
+  ],
+  "primary_items": [
+    "minecraft:diamond_sword",
+    "minecraft:diamond_axe"
+  ],
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 5
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 5
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:lookup",
+              "values": [
+                0.2,
+                0.5,
+                0.75
+              ],
+              "fallback": 1
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:play_sound",
+              "sound": "minecraft:block.glass.break",
+              "volume": 4,
+              "pitch": 0.75
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "dungeons_enchantments:freeze_make_freeze"
+            },
+            {
+              "type": "minecraft:summon_entity",
+              "entity": "minecraft:snowball",
+              "join_team": true
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}
