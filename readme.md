@@ -2,6 +2,8 @@
 
 A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft Java gameplay and difficulty balance.
 
+![CurseForge Downloads](https://img.shields.io/curseforge/dt/1327020?style=for-the-badge&logo=curseforge&label=CURSEFORGE) ![Modrinth Downloads](https://img.shields.io/modrinth/dt/jahus-dungeons-enchantments?style=for-the-badge&logo=modrinth&label=MODRINTH)
+
 - [Critical Hit](#critical-hit): deal critical damage.
 - [Thundering](#thundering): replace your attack with a Thunder strike.
 - [Reckless](#reckless): Trade your Hearts for higher Attack Damage.
