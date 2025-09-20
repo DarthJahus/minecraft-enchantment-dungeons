@@ -10,7 +10,8 @@ A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft J
 - [Evoker Fangs](#evoker-fangs): Summon fangs like an Evoker.
 - [Defensive Fangs](#defensive-fangs): Evoker Fangs appear around the player.
 - [Gravity Warp](#gravity-warp--gravity-warp-arrows): Make the opponent become heavier, then levitate or slow down.
-- [Recycler](#recycler): Randomly not use an arrow.
+- [Recycler](#recycler): Randomly not use an arrow. Compatible with Mending.
+- [Freeze](#freeze): Freeze the target.
 
 ---
 
