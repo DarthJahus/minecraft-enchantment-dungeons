@@ -2,7 +2,7 @@
 
 A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft Java gameplay and difficulty balance.
 
-![CurseForge Downloads](https://img.shields.io/curseforge/dt/1327020?style=for-the-badge&logo=curseforge&label=CURSEFORGE&link=https%3A%2F%2Fwww.curseforge.com%2Fminecraft%2Fdata-packs%2Fdungeons-enchantments) ![Modrinth Downloads](https://img.shields.io/modrinth/dt/jahus-dungeons-enchantments?style=for-the-badge&logo=modrinth&label=MODRINTH&link=https%3A%2F%2Fmodrinth.com%2Fdatapack%2Fjahus-dungeons-enchantments)
+[![CurseForge Downloads](https://img.shields.io/curseforge/dt/1327020?style=for-the-badge&logo=curseforge&label=CURSEFORGE)](https://www.curseforge.com/minecraft/data-packs/dungeons-enchantments) [![Modrinth Downloads](https://img.shields.io/modrinth/dt/jahus-dungeons-enchantments?style=for-the-badge&logo=modrinth&label=MODRINTH)](https://modrinth.com/datapack/jahus-dungeons-enchantments)
 
 - [Critical Hit](#critical-hit): deal critical damage.
 - [Thundering](#thundering): replace your attack with a Thunder strike.
