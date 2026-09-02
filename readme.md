@@ -56,6 +56,8 @@ Note: requires a clear sky view (`can_see_sky`) above the target to trigger, reg
 
 ## Thunderbolt
 
+_Suggested by `turnipheads` on Discord._
+
 Strikes your target (or a hit Lightning Rod) with lightning when thrown, depending on the current weather. The required weather loosens as the enchantment level increases.
 
 - Supported: Trident.
@@ -144,7 +146,7 @@ Note: Shield must be in passive position (not Used).
 
 ## Gravity Warp & Gravity Warp Arrows
 
-_Suggested by itay912 on Discord._
+_Suggested by `itay912` on Discord._
 
 Warps gravity around the victim, making it much heavier and either slows it down or makes it levitate.
 
