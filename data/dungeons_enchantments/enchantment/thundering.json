@@ -4,7 +4,7 @@
   "supported_items": "#minecraft:enchantable/weapon",
   "primary_items": "#minecraft:enchantable/weapon",
   "weight": 1,
-  "max_level": 1,
+  "max_level": 2,
   "min_cost": {
     "base": 15,
     "per_level_above_first": 10
@@ -21,8 +21,150 @@
     "minecraft:post_attack": [
       {
         "requirements": {
-          "condition": "minecraft:random_chance",
-          "chance": 0.5
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:weather_check",
+              "thundering": true
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "can_see_sky": true
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              },
+              "range": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:summon_entity",
+              "entity": "minecraft:lightning_bolt",
+              "join_team": true
+            },
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:lightning_bolt",
+              "min_damage": 30,
+              "max_damage": 30
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:weather_check",
+              "raining": true
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "can_see_sky": true
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.4
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              },
+              "range": {
+                "min": 2,
+                "max": 2
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:summon_entity",
+              "entity": "minecraft:lightning_bolt",
+              "join_team": true
+            },
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:lightning_bolt",
+              "min_damage": 30,
+              "max_damage": 30
+            }
+          ]
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "can_see_sky": true
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:enchantment_level",
+                "amount": {
+                  "type": "minecraft:linear",
+                  "base": 1,
+                  "per_level_above_first": 1
+                }
+              },
+              "range": {
+                "min": 3
+              }
+            }
+          ]
         },
         "effect": {
           "type": "minecraft:all_of",
