@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_enchantments",
               "enchantments": {
-                "dungeons_enchantments:gravity_warp": 2
+                "dungeons_enchantments:gravity_warp_weapon": 1
               }
             }
           ]
