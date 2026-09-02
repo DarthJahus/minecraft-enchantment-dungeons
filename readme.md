@@ -5,7 +5,8 @@ A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft J
 [![CurseForge Downloads](https://img.shields.io/curseforge/dt/1327020?style=for-the-badge&logo=curseforge&label=CURSEFORGE)](https://www.curseforge.com/minecraft/data-packs/dungeons-enchantments) [![Modrinth Downloads](https://img.shields.io/modrinth/dt/jahus-dungeons-enchantments?style=for-the-badge&logo=modrinth&label=MODRINTH)](https://modrinth.com/datapack/jahus-dungeons-enchantments)
 
 - [Critical Hit](#critical-hit): deal critical damage.
-- [Thundering](#thundering): replace your attack with a Thunder strike.
+- [Thundering](#thundering): replace your attack with a Thunder strike (depends on the weather)
+- [Thunderbolt](#thunderbolt): strike your trident's target with lightning depending on the weather.
 - [Reckless](#reckless): Trade your Hearts for higher Attack Damage.
 - [Explosive Attacks](#explosive-attack): replace your attack with an explosion. 
 - [Gravity Pulse](#gravity-pulse--gravity-pulse-arrows): Pull the enemies around to your opponent.
@@ -36,17 +37,40 @@ Offers a chance to deal a critical damage (× 3).
 
 ## Thundering
 
-Offers a 20 % chance to replace the current attack by a Thunder that deals 30 damage points.
+Offers a chance to replace the current attack by a Thunder that deals 30 damage points. The chance and the required weather both scale with the enchantment level.
 
 - Supported: All weapons.
 - In Enchanting Table: All weapons.
 - Incompatible with: Sharpness, Smite, Bane of Arthropods
 
-| Level | Chance | DMG Expectancy\* | 
-|-------|--------|------------------|
-| 1     | 20 %   | 12,4             |
+| Level | Weather required | Chance | DMG Expectancy\* | 
+|-------|-------------------|--------|------------------|
+| 1     | Thunderstorm      | 30 %   | 15,7             |
+| 2     | Rain or thunder   | 40 %   | 16,9             |
+| 3\*\* | Any weather       | 50 %   | 18               |
 
-\* Considering a Netherite Sword enchanted with Critical Hit. For comparison, a Sharpness V Netherite Sword deals 11 damage points.
+\* Considering a Netherite Sword enchanted with Thundering. For comparison, a Sharpness V Netherite Sword deals 11 damage points.  
+\*\* Level 3 is not obtainable through normal gameplay (enchanting table, anvil, villagers or standard loot). It exists in the datapack logic for admin use or special loot only.
+
+Note: requires a clear sky view (`can_see_sky`) above the target to trigger, regardless of level.
+
+## Thunderbolt
+
+Strikes your target (or a hit Lightning Rod) with lightning when thrown, depending on the current weather. The required weather loosens as the enchantment level increases.
+
+- Supported: Trident.
+- In Enchanting Table: Trident.
+- Incompatible with: Channeling, Riptide
+
+| Level | Weather required | 
+|-------|-------------------|
+| 1     | Thunderstorm      |
+| 2     | Rain or thunder    |
+| 3\*   | Any weather       |
+
+\* Level 3 is not obtainable through normal gameplay (enchanting table, anvil, villagers, or standard loot). It exists in the datapack logic for admin use or special loot only.
+
+Note: requires a clear sky view (`can_see_sky`) above the target to trigger, regardless of level.
 
 ## Reckless
 
