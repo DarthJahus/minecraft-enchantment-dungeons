@@ -24,31 +24,31 @@
           ]
         },
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:weather_check",
+              "type": "minecraft:weather_check",
               "thundering": true
             },
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:trident"
+                "entity_type": "minecraft:trident"
               }
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "can_see_sky": true
               }
             },
             {
-              "condition": "minecraft:block_state_property",
+              "type": "minecraft:match_block",
               "block": "minecraft:lightning_rod"
             },
             {
-              "condition": "minecraft:value_check",
+              "type": "minecraft:float_value_check",
               "value": {
                 "type": "minecraft:enchantment_level",
                 "amount": {
@@ -57,7 +57,7 @@
                   "per_level_above_first": 1
                 }
               },
-              "range": {
+              "test": {
                 "min": 1,
                 "max": 1
               }
@@ -82,31 +82,31 @@
           ]
         },
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:weather_check",
+              "type": "minecraft:weather_check",
               "raining": true
             },
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:trident"
+                "entity_type": "minecraft:trident"
               }
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "can_see_sky": true
               }
             },
             {
-              "condition": "minecraft:block_state_property",
+              "type": "minecraft:match_block",
               "block": "minecraft:lightning_rod"
             },
             {
-              "condition": "minecraft:value_check",
+              "type": "minecraft:float_value_check",
               "value": {
                 "type": "minecraft:enchantment_level",
                 "amount": {
@@ -115,7 +115,7 @@
                   "per_level_above_first": 1
                 }
               },
-              "range": {
+              "test": {
                 "min": 2,
                 "max": 2
               }
@@ -140,27 +140,27 @@
           ]
         },
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:trident"
+                "entity_type": "minecraft:trident"
               }
             },
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "can_see_sky": true
               }
             },
             {
-              "condition": "minecraft:block_state_property",
+              "type": "minecraft:match_block",
               "block": "minecraft:lightning_rod"
             },
             {
-              "condition": "minecraft:value_check",
+              "type": "minecraft:float_value_check",
               "value": {
                 "type": "minecraft:enchantment_level",
                 "amount": {
@@ -169,7 +169,7 @@
                   "per_level_above_first": 1
                 }
               },
-              "range": {
+              "test": {
                 "min": 3
               }
             }
@@ -197,14 +197,14 @@
           ]
         },
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:weather_check",
+              "type": "minecraft:weather_check",
               "thundering": true
             },
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
                 "location": {
@@ -213,14 +213,14 @@
               }
             },
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
-                "type": "minecraft:trident"
+                "entity_type": "minecraft:trident"
               }
             },
             {
-              "condition": "minecraft:value_check",
+              "type": "minecraft:float_value_check",
               "value": {
                 "type": "minecraft:enchantment_level",
                 "amount": {
@@ -229,7 +229,7 @@
                   "per_level_above_first": 1
                 }
               },
-              "range": {
+              "test": {
                 "min": 1,
                 "max": 1
               }
@@ -256,14 +256,14 @@
           ]
         },
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:weather_check",
+              "type": "minecraft:weather_check",
               "raining": true
             },
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
                 "location": {
@@ -272,14 +272,14 @@
               }
             },
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
-                "type": "minecraft:trident"
+                "entity_type": "minecraft:trident"
               }
             },
             {
-              "condition": "minecraft:value_check",
+              "type": "minecraft:float_value_check",
               "value": {
                 "type": "minecraft:enchantment_level",
                 "amount": {
@@ -288,7 +288,7 @@
                   "per_level_above_first": 1
                 }
               },
-              "range": {
+              "test": {
                 "min": 2,
                 "max": 2
               }
@@ -315,10 +315,10 @@
           ]
         },
         "requirements": {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
                 "location": {
@@ -327,14 +327,14 @@
               }
             },
             {
-              "condition": "minecraft:entity_properties",
+              "type": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
-                "type": "minecraft:trident"
+                "entity_type": "minecraft:trident"
               }
             },
             {
-              "condition": "minecraft:value_check",
+              "type": "minecraft:float_value_check",
               "value": {
                 "type": "minecraft:enchantment_level",
                 "amount": {
@@ -343,7 +343,7 @@
                   "per_level_above_first": 1
                 }
               },
-              "range": {
+              "test": {
                 "min": 3
               }
             }
