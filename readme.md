@@ -15,6 +15,7 @@ A set of enchantments inspired by Minecraft Dungeons, but adapted to Minecraft J
 - [Gravity Warp](#gravity-warp--gravity-warp-arrows): Make the opponent become heavier, then levitate or slow down.
 - [Recycler](#recycler): Randomly not use an arrow. Compatible with Mending.
 - [Freeze](#freeze): Freeze the target.
+- [Sharp Tines](#sharp-tines): Increase trident damage.
 
 ---
 
@@ -197,3 +198,17 @@ Gives a chance to freeze the victim during 10 seconds. The victim will get 1 (½
 | 3     | 75 %   |
 
 Note that players will get ¼❤ every second, which is the same damage overall to other mobs, but applied differently, because of [some Minecraft limitations](<https://feedback.minecraft.net/hc/en-us/community/posts/360039746472/comments/360012186352>).
+
+## Sharp Tines
+
+Increases the damage dealt by tridents.
+
+- Supported: Trident
+- In Enchanting Table: Trident
+- Incompatible with: Sharpness, Smite, Bane of Arthropods (and other damage enchantments)
+
+| Level | Bonus Damage |
+|-------|--------------|
+| 1     | +1           |
+| 2     | +2           |
+| 3     | +3           |
